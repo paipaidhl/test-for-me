@@ -57,13 +57,6 @@ mindmap
       TelRilCallback(收翻译官回话)
       TelRilRequest(回执单serialId+InnerEvent)
       ObserverHandler(广播站)
-    核心术语
-      AP(主CPU)/Modem(基带芯片)
-      RIL(无线接口层)
-      RIL Adapter(翻译官，HDF服务)
-      HDI/HDF
-      QMI/AT指令(芯片听得懂的语言)
-      IPC/Binder(跨进程通话)
     Android RIL对照
       Android链路
         Framework→rild(HIDL)
