@@ -38,12 +38,12 @@ mindmap
         App→CoreService→Manager
         Handler→TelRil→RIL Adapter→Modem
       关键点1 TelRilManager连接桥
-        HDI::Ril::V1_5::IRil::Get()
+        "HDI::Ril::V1_5::IRil::Get()"
         SetCallback1_5(TelRilCallback)
         HDF监听+断线重连
       关键点2 请求链路(一问一答)
         InnerEvent造回执+SetOwner
-        Request()登记serialId到requestMap_
+        "Request() 登记serialId到requestMap_"
         跨进程调IRil::GetSignalStrength
       关键点3 返回链路
         响应Response()按serialId认领→发回owner
