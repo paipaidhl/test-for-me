@@ -38,13 +38,13 @@ mindmap
         App→CoreService→Manager
         Handler→TelRil→RIL Adapter→Modem
       关键点1 TelRilManager连接桥
-        "HDI::Ril::V1_5::IRil::Get()"
+        HDI.Ril.V1_5.IRil.Get()
         SetCallback1_5(TelRilCallback)
         HDF监听+断线重连
       关键点2 请求链路(一问一答)
         InnerEvent造回执+SetOwner
-        "Request() 登记serialId到requestMap_"
-        跨进程调IRil::GetSignalStrength
+        Request() 登记serialId到requestMap
+        跨进程调IRil.GetSignalStrength
       关键点3 返回链路
         响应Response()按serialId认领→发回owner
         主动上报Notify()→ObserverHandler广播
@@ -76,5 +76,5 @@ mindmap
         主动上报广播
       rild≈RIL Adapter(翻译官)
       QCRIL≈RIL Adapter内部厂商实现
-      ril_commands.h≈eventMap_映射表
+      ril_commands.h≈eventMap映射表
 ```
